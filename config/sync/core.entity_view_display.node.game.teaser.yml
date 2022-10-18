@@ -1,0 +1,34 @@
+uuid: bf3796b8-19f8-4e34-a852-219a8dd0a494
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.game.body
+    - field.field.node.game.field_poster
+    - field.field.node.game.field_releasedate
+    - node.type.game
+  module:
+    - text
+    - user
+id: node.game.teaser
+targetEntityType: node
+bundle: game
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_poster: true
+  field_releasedate: true

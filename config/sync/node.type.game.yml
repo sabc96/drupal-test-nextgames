@@ -1,0 +1,18 @@
+uuid: 6c85f394-bda9-46d5-bb9e-db30eaad1936
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Game
+type: game
+description: 'Use game content type for your game static content, such as revealing poster and release date.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
